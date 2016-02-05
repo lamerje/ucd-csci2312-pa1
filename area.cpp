@@ -5,9 +5,9 @@
 #include <iostream>
 #include <cmath>
 
-
-{
+struct computeArea {
     double area;
+    double S;
     Point p;
     p p1, p2, p3;
 
@@ -15,14 +15,25 @@
     p1.setY(Y = 0.0);
     p1.setZ(Z = 0.1);
 
-    p2.setX(X = 15.0);
-    p2.setY(Y = 23.0);
+    p2.setX(X = 3.0);
+    p2.setY(Y = 0.0);
     p2.setZ(Z = 0.10);
 
-    p3.setX(X = 15.0);
-    p3.setY(Y = 0.0);
+    p3.setX(X = 3.0);
+    p3.setY(Y = 4.0);
     p3.setZ(Z = 0.1);
+}
 
-area = sqrt(pow(p1, 2.0)+pow(p2, 2.0));
+double    fofArea()
+double sideA = abs(sqrt((pow(p1.getX - p2.getX), 2.0)+(pow(p1.getY, p2.getY). 2.0)));
+
+double sideB = abs(sqrt((pow(p2.getX - p3.getX), 2.0)+(pow(p2.getY, p3.getY). 2.0)));
+
+double sideC = abs(sqrt((pow(p3.getX - p1.getX), 2.0)+(pow(p3.getY, p1.getY). 2.0)));
+
+    S = (sideA + sideB + sideC)/2;
+    area = (sqrt(S * (S - sideA)*(S - sideB)*(S - sideC)));
+
+return area;
 
 }
