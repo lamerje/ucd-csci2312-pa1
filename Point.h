@@ -4,6 +4,8 @@
 #ifndef __POINT_H
 #define __POINT_H
 
+using namespace std;
+
 class Point {
     
 private:
