@@ -3,29 +3,29 @@
 
 #include "Point.h"
 
-
-double Point::getX(){
+{
+    double Point::getX() {
         return x;
     };
 
-double Point::getY(){
+    double Point::getY() {
         return y;
     };
 
-double Point::getZ(){
+    double Point::getZ() {
         return z;
     };
 
-void Point::setX(double newX){
+    void Point::setX(double newX) {
         x = newX;
     };
 
-void Point::setY(double newY){
+    void Point::setY(double newY) {
         y = newY;
     };
 
-void Point::setZ(double newZ ){
+    void Point::setZ(double newZ) {
         z = newZ;
     };
-
+}
 
