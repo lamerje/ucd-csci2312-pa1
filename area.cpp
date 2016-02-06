@@ -12,10 +12,9 @@
 using namespace std;
 
 //struct computeArea {
-    double area;
-    double s;
-//    Point::Point p; // ( p1, p2, p3);
-    p p1;
+
+//    Point p;    // ( p1, p2, p3);
+//    p p1;
 //    p p2;
 //    p p3;
 
@@ -25,7 +24,7 @@ using namespace std;
 
 //    p2.setX(newX = 3.0);
 //    p2.setY(newY = 0.0);
- //   p2.setZ(newZ = 0.10);
+//    p2.setZ(newZ = 0.10);
 
 //    p3.setX(newX = 3.0);
 //    p3.setY(newY = 4.0);
@@ -35,18 +34,18 @@ using namespace std;
 {
 double computeArea(double x, double y, double z) {
 
-        double sideA = abs(sqrt(pow((p1.getX - p2.getX), 2.0) + (pow(p1.getY, p2.getY).
-        2.0)));
+        double area;
+        double s;
 
-        double sideB = abs(sqrt(pow((p2.getX - p3.getX), 2.0) + (pow(p2.getY, p3.getY).
-        2.0)));
+        double sideA = abs(sqrt(pow((p1.getX - p2.getX), 2.0) + pow((p1.getY, p2.getY), 2.0)));
 
-        double sideC = abs(sqrt(pow((p3.getX - p1.getX), 2.0) + (pow(p3.getY, p1.getY).
-        2.0)));
+        double sideB = abs(sqrt(pow((p2.getX - p3.getX), 2.0) + pow((p2.getY, p3.getY), 2.0)));
+
+        double sideC = abs(sqrt(pow((p3.getX - p1.getX), 2.0) + pow((p3.getY, p1.getY), 2.0)));
 
         s = (sideA + sideB + sideC) / 2;
 
-        area = (sqrt(S * (S - sideA) * (S - sideB) * (S - sideC)));
+        area = (sqrt(s * (s - sideA) * (s - sideB) * (s - sideC)));
 
         return area;
 
