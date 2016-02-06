@@ -5,27 +5,13 @@
 #include <iostream>
 
 #include "Point.h"
+
 {
-Point::Point()
-Point p; // ( p1, p2, p3);
-p p1;
-p p2;
-p p3;
-    p1.setX(newX = 0.0);
-    p1.setY(newY = 0.0);
-    p1.setZ(newZ = 0.1);
 
-    p2.setX(newX = 3.0);
-    p2.setY(newY = 0.0);
-    p2.setZ(newZ = 0.10);
+Point::Point(): { }
 
-    p3.setX(newX = 3.0);
-    p3.setY(newY = 4.0);
-    p3.setZ(newZ = 0.1);
-
+Point::Point(double x = 0, double y = 0, double z = 0): {
 }
-
-{
     double Point::getX() const{
         return x;
     }
