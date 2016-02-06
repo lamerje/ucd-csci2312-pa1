@@ -34,8 +34,8 @@ using namespace std;
 {
 double computeArea(double x, double y, double z) {
 
-        double area;
-        double s;
+        double area;    // variable to pass
+        double s;       // variable to support computation
 
         double sideA = abs(sqrt(pow((p1.getX - p2.getX), 2.0) + pow((p1.getY, p2.getY), 2.0)));
 
