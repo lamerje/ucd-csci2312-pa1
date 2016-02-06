@@ -1,7 +1,7 @@
 //functions for Point class
 // Created by Star Gazer on 2/3/16
 
-#include <cassert>
+
 #include <iostream>
 
 #include "Point.h"
