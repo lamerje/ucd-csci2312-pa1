@@ -14,10 +14,10 @@ using namespace std;
 //struct computeArea {
     double area;
     double s;
-//    Point p( p1, p2, p3);
-    p p1 =0;
-    p p2 =0;
-    p p3 =0;
+//    Point::Point p; // ( p1, p2, p3);
+  //  p p1;
+//    p p2;
+//    p p3;
 
 //    p1.setX(newX = 0.0);
 //    p1.setY(newY = 0.0);
