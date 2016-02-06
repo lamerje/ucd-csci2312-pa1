@@ -18,7 +18,7 @@ int main() {
     const int NumIters = 3;
 
 //    Point p1(0.0, 0.0, 0.1), p2(3.0, 0.0, 0.1);
- //   Point p3(3.0, 4.0, 0.1);    // initialize objects p1, p2, p3)
+//   Point p3(3.0, 4.0, 0.1);    // initialize objects p1, p2, p3)
 
 //    p1.setX(newX = 0.0);
 //    p1.setY(newY = 0.0);

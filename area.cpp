@@ -31,7 +31,6 @@ using namespace std;
 //};
 
 {
-
 double computeArea(double x, double y, double z) {
 
         Point p1(0.0, 0.0, 0.1), p2(3.0, 0.0, 0.1);
