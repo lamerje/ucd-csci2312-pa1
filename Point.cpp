@@ -1,19 +1,21 @@
 //functions for Point class
 // Created by Star Gazer on 2/3/16
 
+#include <cassert>
+#include <iostream>
+
 #include "Point.h"
 
-using namespace std;
 {
-    double Point::getX() {
+    double Point::getX() const{
         return x;
     }
 
-    double Point::getY() {
+    double Point::getY() const{
         return y;
     }
 
-    double Point::getZ() {
+    double Point::getZ() const{
         return z;
     }
 
