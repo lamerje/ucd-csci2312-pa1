@@ -15,7 +15,7 @@ using namespace std;
     double area;
     double s;
 //    Point::Point p; // ( p1, p2, p3);
-  //  p p1;
+    p p1;
 //    p p2;
 //    p p3;
 
