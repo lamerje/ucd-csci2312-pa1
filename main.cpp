@@ -15,6 +15,8 @@ using namespace Testing;
 
 int main() {
 
+    const int NumIters = 3;
+
     Point p1(0.0, 0.0, 0.1), p2(3.0, 0.0, 0.1);
     Point p3(3.0, 4.0, 0.1);    // initialize objects p1, p2, p3)
 
@@ -30,7 +32,7 @@ int main() {
 //    p3.setY(newY = 4.0);
 //    p3.setZ(newZ = 0.1);
 
-    const int NumIters = 3;
+
 
     cout << endl << "Testing PA1!!" << endl << endl;
 
