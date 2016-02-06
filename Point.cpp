@@ -6,11 +6,11 @@
 
 #include "Point.h"
 
-{
 
-Point::Point(): { }
 
-Point::Point(double x = 0, double y = 0, double z = 0): {
+Point::Point(): x(0), y(0), z(0){ }
+
+Point::Point(double x, double y, double z): {
 }
     double Point::getX() const{
         return x;
@@ -35,5 +35,5 @@ Point::Point(double x = 0, double y = 0, double z = 0): {
     void Point::setZ(double newZ) {
         z = newZ;
     }
-}
+
 
