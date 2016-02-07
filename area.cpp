@@ -33,8 +33,7 @@ using namespace std;
 
 double computeArea(double x, double y, double z) {
 
-        Point p1(0.0, 0.0, 0.1), p2(3.0, 0.0, 0.1);
-        Point p3(3.0, 4.0, 0.1);    // initialize objects p1, p2, p3)
+        Point p1(0.0, 0.0, 0.1), p2(3.0, 0.0, 0.1), p3(3.0, 4.0, 0.1);    // initialize objects p1, p2, p3)
 
         double area;    // variable to pass
         double s;       // variable to support computation
@@ -48,6 +47,7 @@ double computeArea(double x, double y, double z) {
         s = (sideA + sideB + sideC) / 2;
 
         area = (sqrt(s * (s - sideA) * (s - sideB) * (s - sideC)));
+
 
         return area;
 
