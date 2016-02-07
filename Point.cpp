@@ -1,17 +1,17 @@
-//functions for Point class
+// functions for Point class
 // Created by Star Gazer on 2/3/16
-
-
-#include <iostream>
 
 #include "Point.h"
 
+Point::Point(): x(0), y(0), z(0){}
 
-
-Point::Point(): x(0), y(0), z(0){ }
-
-Point::Point(double x, double y, double z):{
+Point::Point(double x, double y, double z): {
+    getX();
+    getY();
+    getZ();
 }
+
+
     double Point::getX() const{
         return x;
     }
