@@ -30,19 +30,18 @@ using namespace std;
 //    p3.setZ(newZ = 0.1);
 //};
 
+double computeArea(const Point &a, const Point &b, const Point &c)
+ {
 
-double computeArea(double x, double y, double z) {
-
-        Point p1(0.0, 0.0, 0.1), p2(3.0, 0.0, 0.1), p3(3.0, 4.0, 0.1);    // initialize objects p1, p2, p3)
 
         double area;    // variable to pass
         double s;       // variable to support computation
 
-        double sideA = abs(sqrt(pow((p1.getX() - p2.getX()), 2.0) + pow((p1.getY(), p2.getY()), 2.0)));
+        double sideA = abs(sqrt(pow((a.getX() - b.getX()), 2.0) + pow((a.getY(), b.getY()), 2.0)));
 
-        double sideB = abs(sqrt(pow((p2.getX() - p3.getX()), 2.0) + pow((p2.getY(), p3.getY()), 2.0)));
+        double sideB = abs(sqrt(pow((b.getX() - c.getX()), 2.0) + pow((b.getY(), c.getY()), 2.0)));
 
-        double sideC = abs(sqrt(pow((p3.getX() - p1.getX()), 2.0) + pow((p3.getY(), p1.getY()), 2.0)));
+        double sideC = abs(sqrt(pow((c.getX() - a.getX()), 2.0) + pow((c.getY(), a.getY()), 2.0)));
 
         s = (sideA + sideB + sideC) / 2;
 
