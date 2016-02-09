@@ -64,7 +64,7 @@ void test_point_getset(ErrorContext &ec, unsigned int numRuns) {
         {
             Point p;
 
-            pass = (p.getX() == 0 && p.getY() == 0 && p.getY() == 0);
+            pass = (p.getX() == 0 && p.getY() == 0 && p.getZ() == 0);
 
             ec.result(pass);
         }
