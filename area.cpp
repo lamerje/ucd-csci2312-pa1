@@ -37,15 +37,15 @@ double computeArea(const Point &a, const Point &b, const Point &c)
         double area;    // variable to pass
         double s;       // variable to support computation
 
-        double sideA = abs(sqrt(pow((a.getX() - b.getX()), 2.0) + pow((a.getY() - b.getY()), 2.0)));
+        double sideA = sqrt(abs(pow((a.getX() - b.getX()), 2.0)) + abs(pow((a.getY() - b.getY()), 2.0)));
 
-        double sideB = abs(sqrt(pow((b.getX() - c.getX()), 2.0) + pow((b.getY() - c.getY()), 2.0)));
+        double sideB = sqrt(abs(pow((b.getX() - c.getX()), 2.0)) + abs(pow((b.getY() - c.getY()), 2.0)));
 
-        double sideC = abs(sqrt(pow((c.getX() - a.getX()), 2.0) + pow((c.getY() - a.getY()), 2.0)));
+        double sideC = sqrt(abs(pow((c.getX() - a.getX()), 2.0)) + abs(pow((c.getY() - a.getY()), 2.0)));
 
         s = (sideA + sideB + sideC) / 2;
 
-        area = (sqrt(s * (s - sideA) * (s - sideB) * (s - sideC)));
+        area = sqrt(s * (s - sideA) * (s - sideB) * (s - sideC));
 
 
         return area;
